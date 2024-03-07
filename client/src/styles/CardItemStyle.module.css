@@ -1,0 +1,99 @@
+.photo{
+    width: 650px;
+}
+
+.card{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.titleAndBody{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 35px;
+    
+}
+
+.doWhite{
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media (min-width: 768px) and ( max-width: 1024px){
+    .photo{
+        width: 400px;
+    }
+    .card{
+        margin-right: 20px;
+        width: 100%;
+        justify-content:left;
+    }
+    .titleAndBody{
+        grid-gap: 10px;
+        margin-right: 60px;
+        width: 400px;
+        font-size: 13px;
+    }
+  
+}
+
+@media (min-width: 425px) and ( max-width: 768px){
+    .photo{
+        width: 300px;
+    }
+    
+    .doWhite{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 375px) and ( max-width: 425px){
+    .card{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .photo{
+        width: 100%;
+    }
+
+    figure{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .titleAndBody{
+        grid-gap: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 320px){
+    .card{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .photo{
+        width: 100%;
+    }
+
+    figure{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .titleAndBody{
+        grid-gap: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .doWhite{
+        font-size: 20px;
+    }
+}
+

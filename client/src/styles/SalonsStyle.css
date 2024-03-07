@@ -1,0 +1,60 @@
+.salons{
+    display: flex;
+    justify-content: center;
+    grid-gap: 0px;
+    padding-top: 100px;
+    padding-bottom: 500px;
+    background-color: rgb(20, 20, 20);
+}
+.salon{
+    width: 500px;
+}
+
+@media (min-width: 768px) and ( max-width: 1024px){
+    .salons{
+        grid-gap: 75px;
+        
+    }
+    .salon{
+        margin-top: 100px;
+        margin-left: 25px;
+        width: 300px;
+    }
+    .map{
+        margin-right: 30px;
+    }
+    
+}
+
+
+@media (min-width: 425px) and ( max-width: 768px){
+    .salons{
+        flex-direction: column;
+        padding-bottom: 250px;
+        padding-top: 0px;
+        padding-left: 40px;
+    }
+       
+}
+
+@media (min-width: 375px) and ( max-width: 425px){
+    .salons{
+        padding-left: 10px;
+        padding-top: 50px;
+    }
+    .salon{
+        width: 100%;
+    }
+}
+
+@media (min-width: 320px) and ( max-width: 375px){
+    .salons{
+        flex-direction: column;
+        padding-bottom: 200px;
+        padding-left: 10px;
+
+    }
+    .salon{
+        width: 100%;
+    }
+}
